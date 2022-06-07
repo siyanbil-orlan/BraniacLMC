@@ -56,6 +56,10 @@ class Courses(models.Model):
         self.deleted = True
         self.save()
 
+    class Meta:
+        verbose_name = _("Course")
+        verbose_name_plural = _("Courses")
+
 
 class CourseFeedback(models.Model):
     RATING = ((5, "⭐⭐⭐⭐⭐"), (4, "⭐⭐⭐⭐"), (3, "⭐⭐⭐"), (2, "⭐⭐"), (1, "⭐"))
